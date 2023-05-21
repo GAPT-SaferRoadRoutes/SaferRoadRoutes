@@ -1,0 +1,17 @@
+<layer>
+  <name>hotels</name>
+  <id>LayerInfoImpl--5bfbba57:18839c97431:-7ff1</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe0</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5bfbba57:18839c97431:-7ff2</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-05-20 15:34:22.920 UTC</dateCreated>
+  <dateModified>2023-05-20 20:08:43.676 UTC</dateModified>
+</layer>

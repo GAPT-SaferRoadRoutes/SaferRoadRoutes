@@ -1,0 +1,46 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--5bfbba57:18839c97431:-7fee</id>
+  <name>museums</name>
+  <nativeName>museums</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--184bcecd:1881bf94b62:-7fff</id>
+  </namespace>
+  <title>museums</title>
+  <keywords>
+    <string>features</string>
+    <string>museums</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>14.209271430969238</minx>
+    <maxx>14.531472206115723</maxx>
+    <miny>35.85316848754883</miny>
+    <maxy>36.059749603271484</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>14.209271430969238</minx>
+    <maxx>14.531472206115723</maxx>
+    <miny>35.85316848754883</miny>
+    <maxy>36.059749603271484</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-6baefa65:1881c1c9448:-8000</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

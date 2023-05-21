@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--5bfbba57:18839c97431:-7ffc</id>
+  <name>university</name>
+  <nativeName>university</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--184bcecd:1881bf94b62:-7fff</id>
+  </namespace>
+  <title>university</title>
+  <keywords>
+    <string>features</string>
+    <string>university</string>
+  </keywords>
+  <srs>EPSG:404000</srs>
+  <nativeBoundingBox>
+    <minx>14.479864120483398</minx>
+    <maxx>14.485779762268066</maxx>
+    <miny>35.900482177734375</miny>
+    <maxy>35.90372848510742</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>14.479864120483398</minx>
+    <maxx>14.485779762268066</maxx>
+    <miny>35.900482177734375</miny>
+    <maxy>35.90372848510742</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-6baefa65:1881c1c9448:-8000</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

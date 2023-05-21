@@ -1,0 +1,17 @@
+<layer>
+  <name>pharmacy</name>
+  <id>LayerInfoImpl--5bfbba57:18839c97431:-7ff5</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-8728362:1883ed1162a:-7ff3</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5bfbba57:18839c97431:-7ff6</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-05-20 15:33:57.736 UTC</dateCreated>
+  <dateModified>2023-05-21 15:42:05.551 UTC</dateModified>
+</layer>

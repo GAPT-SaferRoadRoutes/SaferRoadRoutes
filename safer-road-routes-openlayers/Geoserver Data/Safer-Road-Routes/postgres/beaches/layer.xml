@@ -1,0 +1,17 @@
+<layer>
+  <name>beaches</name>
+  <id>LayerInfoImpl--5bfbba57:18839c97431:-7fef</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe0</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5bfbba57:18839c97431:-7ff0</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-05-20 15:34:37.602 UTC</dateCreated>
+  <dateModified>2023-05-20 20:08:52.406 UTC</dateModified>
+</layer>

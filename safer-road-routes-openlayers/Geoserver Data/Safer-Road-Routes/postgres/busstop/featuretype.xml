@@ -1,0 +1,46 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--5bfbba57:18839c97431:-8000</id>
+  <name>busstop</name>
+  <nativeName>bus stop</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--184bcecd:1881bf94b62:-7fff</id>
+  </namespace>
+  <title>busstop</title>
+  <keywords>
+    <string>bus stop</string>
+    <string>features</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>14.190443992614746</minx>
+    <maxx>14.573121070861816</maxx>
+    <miny>35.812774658203125</miny>
+    <maxy>36.07651901245117</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>14.190443992614746</minx>
+    <maxx>14.573121070861816</maxx>
+    <miny>35.812774658203125</miny>
+    <maxy>36.07651901245117</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-6baefa65:1881c1c9448:-8000</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

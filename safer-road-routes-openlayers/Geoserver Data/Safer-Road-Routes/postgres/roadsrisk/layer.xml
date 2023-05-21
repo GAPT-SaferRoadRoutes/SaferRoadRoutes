@@ -1,0 +1,17 @@
+<layer>
+  <name>roadsrisk</name>
+  <id>LayerInfoImpl-6baefa65:1881c1c9448:-7ffe</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--668749dd:1883f74b076:-7ff3</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-6baefa65:1881c1c9448:-7fff</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-05-14 21:14:22.423 UTC</dateCreated>
+  <dateModified>2023-05-21 19:17:33.930 UTC</dateModified>
+</layer>

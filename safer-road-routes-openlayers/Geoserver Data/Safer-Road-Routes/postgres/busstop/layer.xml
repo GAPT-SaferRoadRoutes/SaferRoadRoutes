@@ -1,0 +1,17 @@
+<layer>
+  <name>busstop</name>
+  <id>LayerInfoImpl--5bfbba57:18839c97431:-7fff</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-8728362:1883ed1162a:-7ffe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5bfbba57:18839c97431:-8000</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-05-20 15:31:23.864 UTC</dateCreated>
+  <dateModified>2023-05-21 15:03:41.952 UTC</dateModified>
+</layer>

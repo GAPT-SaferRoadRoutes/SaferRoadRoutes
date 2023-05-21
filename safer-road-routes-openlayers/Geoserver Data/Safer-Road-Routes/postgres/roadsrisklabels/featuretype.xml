@@ -1,0 +1,46 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-661a6bb3:1883f496175:-7fa6</id>
+  <name>roadsrisklabels</name>
+  <nativeName>roadsrisk</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--184bcecd:1881bf94b62:-7fff</id>
+  </namespace>
+  <title>roadsrisklabels</title>
+  <keywords>
+    <string>features</string>
+    <string>roadsrisk</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>14.1842041015625</minx>
+    <maxx>14.574920654296875</maxx>
+    <miny>35.80691909790039</miny>
+    <maxy>36.08200454711914</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>14.1842041015625</minx>
+    <maxx>14.574920654296875</maxx>
+    <miny>35.80691909790039</miny>
+    <maxy>36.08200454711914</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-6baefa65:1881c1c9448:-8000</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>
