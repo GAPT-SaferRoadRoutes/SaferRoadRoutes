@@ -2,12 +2,145 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Using OpenLayers with Vite</title>
+    <title>Safer Road Routes</title>
+  <style>
+
+  #text{
+    margin: 12px;
+  }
+
+  .togglebox{
+    float: right;
+    margin-right: 40%;
+  }
+
+  form{
+    margin: 12px;
+  }
+
+  </style>
   </head>
   <body>
-    <div id="map"></div>
+    <div id="map" style="width: 80%; height: 100%; position: fixed;"></div>
+    <div id="sidebar" style="width:20%; height:100%; float:right;">
+      <h1 id="text" style="text-align: center; font-size: 30px;">Layers</h1>
+
+      <p id="text" style="text-align: left; font-size: 24px; text-decoration: underline;">General</p>
+
+      <div id = "checkset">
+        <text id="text" style="text-align: left; font-size: 18px;">Roads</text>
+        <input type="checkbox" class="togglebox" alt="2" checked>
+      </div>
+
+      <div id = "checkset">
+        <text id="text" style="text-align: left; font-size: 18px;">Bus Stops</text>
+        <input type="checkbox" class="togglebox" alt="3">
+      </div>
+
+      <div id = "checkset">
+        <text id="text" style="text-align: left; font-size: 18px;">Restaurants</text>
+        <input type="checkbox" class="togglebox" alt="4">
+      </div>
+
+      <div id = "checkset">
+        <text id="text" style="text-align: left; font-size: 18px;">Bars</text>
+        <input type="checkbox" class="togglebox" alt="5">
+      </div>
+
+      <p id="text" style="text-align: left; font-size: 24px; text-decoration: underline;">Health and Safety</p>
+
+      <div id = "checkset">
+        <text id="text" style="text-align: left; font-size: 18px;">Pharmacies</text>
+        <input type="checkbox" class="togglebox" alt="7">
+      </div>
+
+      <div id = "checkset">
+        <text id="text" style="text-align: left; font-size: 18px;">Police Stations</text>
+        <input type="checkbox" class="togglebox" alt="8">
+      </div>
+
+      <p id="text" style="text-align: left; font-size: 24px; text-decoration: underline;">Tourism</p>
+
+      <div id = "checkset">
+        <text id="text" style="text-align: left; font-size: 18px;">Hotels</text>
+        <input type="checkbox" class="togglebox" alt="9">
+      </div>
+
+      <div id = "checkset">
+        <text id="text" style="text-align: left; font-size: 18px;">Beaches</text>
+        <input type="checkbox" class="togglebox" alt="10">
+      </div>
+
+      <div id = "checkset">
+        <text id="text" style="text-align: left; font-size: 18px;">Museums</text>
+        <input type="checkbox" class="togglebox" alt="11">
+      </div>
+
+      <p id="text" style="text-align: left; font-size: 24px; text-decoration: underline;">Heatmaps</p>
+
+      <div id = "checkset">
+        <text id="text" style="text-align: left; font-size: 18px;">Road Risk Heatmap</text>
+        <input type="checkbox" class="togglebox" alt="6">
+      </div>
+
+      <p id="text" style="text-align: left; font-size: 24px; text-decoration: underline;">Map</p>
+      <div id = "checkset">
+        <text id="text" style="text-align: left; font-size: 18px;">Satellite View</text>
+        <input type="checkbox" class="togglebox" alt="1">
+      </div>
+
+      <div id="loginForm">
+        <p id="text" style="text-align: left; font-size: 24px; text-decoration: underline;">Log In for Advanced Features</p>
+        <form id="loginForm" action="logIn()">
+  	  <label for="fname">Username:</label><br>
+  	  <input type="text" id="uname" name="uInput" value=""><br>
+  	  <label for="lname">Password:</label><br>
+  	  <input type="password" id="pword" name="pInput" value=""><br><br>
+  	  <input type="button" onclick="logIn(document.getElementById('uname').value, document.getElementById('pword').value)" value="Log In">
+        </form>
+      </div>
+
+      <div id="advancedFeatures" style="display:none;">
+        <h1 id="text" style="text-align: center; font-size: 30px;">Advanced Features</h1>
+
+        <p id="text" style="text-align: left; font-size: 24px; text-decoration: underline;">Labels</p>
+        <div id = "checkset">
+          <text id="text" style="text-align: left; font-size: 18px;">None</text>
+          <input type="radio" class="radiobox" name="labels" alt="0">
+        </div>
+
+        <div id = "checkset">
+          <text id="text" style="text-align: left; font-size: 18px;">Road Risk Labels</text>
+          <input type="radio" class="radiobox" name="labels" alt="12">
+        </div>
+
+        <div id = "checkset">
+          <text id="text" style="text-align: left; font-size: 18px;">Fatality Labels</text>
+          <input type="radio" class="radiobox" name="labels" alt="13">
+        </div>
+
+        <div id = "checkset">
+          <text id="text" style="text-align: left; font-size: 18px;">Accident Labels</text>
+          <input type="radio" class="radiobox" name="labels" alt="14">
+        </div>
+      </div>
+
+    </div>
     <script type="module" src="./main.js"></script>
+    <script>
+      var adminUsername = "admin";
+      var adminPassword = "password";
+
+      function logIn(username, password){
+        if(username==adminUsername){
+          if(password==adminPassword){
+            var form = document.getElementById("loginForm");
+            var advanced = document.getElementById("advancedFeatures");
+            form.style.display = "none";
+	    advanced.style.display = "block";
+          }
+        }
+      }
+    </script>
   </body>
 </html>
