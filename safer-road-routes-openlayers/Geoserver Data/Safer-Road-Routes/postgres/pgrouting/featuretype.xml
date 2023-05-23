@@ -1,0 +1,101 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-781cc14e:18844ec72fe:-7ff0</id>
+  <name>pgrouting</name>
+  <nativeName>pgrouting</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--184bcecd:1881bf94b62:-7fff</id>
+  </namespace>
+  <title>pgrouting</title>
+  <keywords>
+    <string>features</string>
+    <string>pgrouting</string>
+  </keywords>
+  <nativeCRS>GEOGCS[&quot;WGS 84&quot;, &#xd;
+  DATUM[&quot;World Geodetic System 1984&quot;, &#xd;
+    SPHEROID[&quot;WGS 84&quot;, 6378137.0, 298.257223563, AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]], &#xd;
+    AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]], &#xd;
+  PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], &#xd;
+  UNIT[&quot;degree&quot;, 0.017453292519943295], &#xd;
+  AXIS[&quot;Geodetic longitude&quot;, EAST], &#xd;
+  AXIS[&quot;Geodetic latitude&quot;, NORTH], &#xd;
+  AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</nativeCRS>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>14.187943458557129</minx>
+    <maxx>14.575596809387207</maxx>
+    <miny>35.80569076538086</miny>
+    <maxy>36.08231735229492</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>14.187943458557129</minx>
+    <maxx>14.575596809387207</maxx>
+    <miny>35.80569076538086</miny>
+    <maxy>36.08231735229492</maxy>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>pgrouting</name>
+        <sql>SELECT d.seq, d.path_seq, d.edge, d.cost, h.osm_name, h.kmh, h.x1, h.y1, h.x2, h.y2, h.geom_way  FROM pgr_dijkstra(&apos;&#xd;
+    SELECT id,&#xd;
+         source,&#xd;
+         target,&#xd;
+     %costfunction% AS cost,&#xd;
+         reverse_cost&#xd;
+        FROM roadsrisknetwork&apos;,&#xd;
+    (select source from roadsrisknetwork h order by st_makepoint(h.x1, h.y1) &lt;-&gt; (select st_makepoint(%x1%, %y1%)) limit 1), &#xd;
+	(select target from roadsrisknetwork h order by st_makepoint(h.x2, h.y2) &lt;-&gt; (select st_makepoint(%x2%, %y2%)) limit 1)) AS d&#xd;
+left join roadsrisknetwork h on d.edge = h.id
+</sql>
+        <escapeSql>false</escapeSql>
+        <geometry>
+          <name>geom_way</name>
+          <type>MultiLineString</type>
+          <srid>4326</srid>
+        </geometry>
+        <parameter>
+          <name>y1</name>
+          <defaultValue>35</defaultValue>
+          <regexpValidator>^-?[\d.]+$</regexpValidator>
+        </parameter>
+        <parameter>
+          <name>costfunction</name>
+          <defaultValue>cost</defaultValue>
+          <regexpValidator>^[\w\d\s]+$</regexpValidator>
+        </parameter>
+        <parameter>
+          <name>x1</name>
+          <defaultValue>14</defaultValue>
+          <regexpValidator>^-?[\d.]+$</regexpValidator>
+        </parameter>
+        <parameter>
+          <name>y2</name>
+          <defaultValue>36</defaultValue>
+          <regexpValidator>^-?[\d.]+$</regexpValidator>
+        </parameter>
+        <parameter>
+          <name>x2</name>
+          <defaultValue>15</defaultValue>
+          <regexpValidator>^-?[\d.]+$</regexpValidator>
+        </parameter>
+      </virtualTable>
+    </entry>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-6baefa65:1881c1c9448:-8000</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

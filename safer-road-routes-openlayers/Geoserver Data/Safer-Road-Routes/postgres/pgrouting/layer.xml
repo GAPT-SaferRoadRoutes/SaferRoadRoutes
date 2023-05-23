@@ -1,0 +1,17 @@
+<layer>
+  <name>pgrouting</name>
+  <id>LayerInfoImpl-781cc14e:18844ec72fe:-7fef</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-271f7248:188493ed39a:-757a</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-781cc14e:18844ec72fe:-7ff0</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2023-05-23 00:28:31.601 UTC</dateCreated>
+  <dateModified>2023-05-23 19:12:28.565 UTC</dateModified>
+</layer>
