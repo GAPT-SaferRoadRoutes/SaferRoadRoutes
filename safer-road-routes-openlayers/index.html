@@ -14,15 +14,80 @@
     margin-right: 40%;
   }
 
+  .radiobox{
+    float: right;
+    margin-right: 40%;
+  }
+
   form{
     margin: 12px;
+  }
+
+  .ol-popup {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+    min-width: 10px;
+    opacity: 0.8;
+  }
+  .ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+  }
+  .ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
   }
 
   </style>
   </head>
   <body>
     <div id="map" style="width: 80%; height: 100%; position: fixed;"></div>
-    <div id="sidebar" style="width:20%; height:100%; float:right;">
+    <div id="popup1" class="ol-popup">
+      <div id="popup1-content"></div>
+    </div>
+    <div id="popup2" class="ol-popup">
+      <div id="popup2-content"></div>
+    </div>
+
+    <div id="sidebar" style="width:20%; height:100%; float:right">
+      <h1 id="text" style="text-align: center; font-size: 30px;">Routing</h1>
+      <form id="navbox" action="logIn()">
+        <p style="text-align: left; font-size: 24px; text-decoration: underline;">Start/End</p>
+        <input type="button" class="startendbutton" alt="1" onclick="" value="Set Start Point" style="margin-bottom:6px"> <br>
+        <input type="button" class="startendbutton" alt="2" onclick="" value="Set End Point">
+        <p style="text-align: left; font-size: 24px; text-decoration: underline;">Safety Level</p>
+        <div id = "checkset">
+          <text style="text-align: left; font-size: 18px;">Safe</text>
+          <input type="radio" class="routingradio" name="labels" alt="0" checked>
+        </div>
+        <div id = "checkset">
+          <text style="text-align: left; font-size: 18px;">Risky</text>
+          <input type="radio" class="routingradio" name="labels" alt="1">
+        </div>
+        <p style="text-align: left; font-size: 24px; text-decoration: underline;">Control</p>
+        <input type="button" class="routingbutton" onclick="" value="Find Route" style="margin-bottom:6px"> <br>
+        <input type="button" class="clearbutton" onclick="" value="Clear Routing Data">
+      </form>
+
       <h1 id="text" style="text-align: center; font-size: 30px;">Layers</h1>
 
       <p id="text" style="text-align: left; font-size: 24px; text-decoration: underline;">General</p>
@@ -96,7 +161,7 @@
   	  <input type="text" id="uname" name="uInput" value=""><br>
   	  <label for="lname">Password:</label><br>
   	  <input type="password" id="pword" name="pInput" value=""><br><br>
-  	  <input type="button" onclick="logIn(document.getElementById('uname').value, document.getElementById('pword').value)" value="Log In">
+  	  <input type="button" onclick="logIn(document.getElementById('uname').value, document.getElementById('pword').value)" value="Log In" style="margin-bottom:12px">
         </form>
       </div>
 
@@ -120,11 +185,10 @@
         </div>
 
         <div id = "checkset">
-          <text id="text" style="text-align: left; font-size: 18px;">Accident Labels</text>
+          <text id="text" style="text-align: left; font-size: 18px; padding-bottom: 12px">Accident Labels</text>
           <input type="radio" class="radiobox" name="labels" alt="14">
         </div>
       </div>
-
     </div>
     <script type="module" src="./main.js"></script>
     <script>
