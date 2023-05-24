@@ -5,7 +5,6 @@ import TileLayer from 'ol/layer/Tile.js';
 import View from 'ol/View.js';
 import TileWMS from 'ol/source/TileWMS.js';
 import ImageWMS from 'ol/source/ImageWMS.js';
-import LayerSwitcher from 'ol-layerswitcher/dist/ol-layerswitcher.js';
 import {FullScreen, defaults as defaultControls} from 'ol/control.js';
 import {Image as ImageLayer} from 'ol/layer.js';
 import XYZ from 'ol/source/XYZ.js';
